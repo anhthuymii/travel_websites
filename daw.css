@@ -1,0 +1,292 @@
+body{
+    
+   /* width: 1024;*/
+    
+    padding: 0 40px;
+    background-color: rgb(250, 243, 239);
+    width: 1024;
+	margin: 5px auto 0;
+    font-family: Tahoma "Geneva";
+}
+.a {
+    float: left;
+    margin-left: 50px;
+    margin-top: 19%;
+    margin-right: 27px;
+    margin-bottom: 13%;
+    }
+
+.b{
+    margin-left: 10px;
+    width: 60%;
+    text-align: justify;
+    margin-left: 35%;
+    color:#BFB6AE;
+    font-size: 18px;
+    font-family: Bahnschrift Light;
+    
+}
+
+.c{
+    font-family: 'Courier New', Courier, monospace;
+    color:#F2F2F2;
+    font-size: 25pt;
+   text-shadow: 5px 2px 4px grey;
+    font-weight: bold;
+   /*text-align: center;*/
+   margin-left: 35%;
+   margin-right: 20px;
+ 
+}
+.d{
+    background-color:#132B40;
+    width: 80%;
+    margin-left: 10px;
+    margin-right:10px;
+    margin-bottom: 20px;
+
+    /*height: 650px;*/
+}
+
+
+
+.e {
+    font-family: 'Courier New', Courier, monospace;
+    font:  2em 1em "Times New Roman", "MS Serif", "New York", serif; 
+    margin: 0px; 
+    padding: 10px; 
+    color: #403F3F; 
+    border-top: solid #A6A6A6;
+    border-bottom:  black ; 
+    font-size: 30px;
+    text-align: center;
+
+ }
+ 
+
+ .f{
+    display: flex;
+    flex-direction: row;
+    
+ 
+}
+
+footer
+{
+    background-color: black;
+    border-radius: 0 0 5px 5px;
+   
+    
+}
+table{
+    width:80%;
+     color:#D1DBBD; 
+     text-align: center;
+      margin:0px 10%;
+      font-size:18px;
+      font-family: Tahoma "Geneva";
+}
+header{
+    background-color: rgb(0, 0, 0);
+    width: 1024;
+    height: 105px;
+    /* border: 1px solid rgb(155, 153, 153); */
+    border-radius: 5px 5px 0 0;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+nav {
+    position: absolute;
+    padding: 20px;
+    top: 60px;
+    font-family: 'Courier New', Courier, monospace;
+    color:white;
+}
+nav a{
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    bottom: 20px;
+    font-size: 18px;
+    padding: 10px 15px;
+    margin: 15px 0;
+    /* color: rgb(15, 15, 15); */
+    color: white;
+    font-weight: bold;
+}
+nav a:hover{
+    color: rgb(0, 0, 0);
+    /* border-radius: 5px;
+    border: 1px solid; */
+    background-color: rgb(250, 243, 239);
+}
+.text{
+    color: #fff;
+    position: absolute;
+    /* top: 310px; */
+    top: 110px;
+    background-color: rgba(238, 236, 236, 0.356);
+    width: 1024px;
+    height: 200px;
+    text-align: center;
+    padding-top: 220px;
+    font-size: 20px;
+    
+}
+#a{
+    width: 250px;
+    height: 20px;
+    border-radius: 5px;
+}
+div button{
+    font-size: 25px;
+    border: 1px solid ;
+    border-radius: 20px;
+    margin: 3px;
+    background-color: rgba(0, 0, 0, 0.534);
+    color: white;
+}
+.box{
+    position: relative;
+    float: right;
+    margin: 10px 20px;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 5px;
+    width: 300px;
+    color: white;
+    bottom: 0px;
+    left: 120px;
+}
+.logo{
+    position: absolute;
+    padding: 10px;
+    width: 90px;
+}
+.mxh a{
+    position: relative;
+    color: white;
+    padding: 10px;
+    float: right;
+    right: 370px;
+    top: 10px;
+    font-size: 20px;
+}
+/*cuoitrang*/
+footer{
+    width: 100%;
+    height: 210px;
+    margin: 5px 0;
+    background-color: black;
+    border-radius: 0 0 5px 5px;
+    font-size: 18px;
+    font-family: Tahoma "Geneva";
+}
+.demo{
+    color: white;
+    text-align: center;
+    /* margin: 5px 0; */
+    /* padding: 5px; */
+    font-family: 'Courier New', Courier, monospace;
+}
+table a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+table{
+    width:100%;
+    color:#ffffff; 
+    text-align: justify;
+    margin: 5%;
+    font-size: 16px;
+    font-family: Tahoma "Geneva";
+    text-decoration: none;
+}
+table tr .hotline{
+    color: white;
+    border-style: dashed;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+table a:hover{
+    text-decoration-style: dashed;
+    background: rgb(255, 255, 255);
+    color: black;
+    border-radius: 3px;
+    padding: 5px;
+}
+/*Trang đăng nhập*/
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2%;
+
+}
+.login-form{
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 15px;
+    border: 2px dotted #cccccc;
+    border-radius: 10px;
+    background-color: black;
+}
+
+.input-box{
+    margin-bottom: 10px;
+}
+.input-box input{
+    padding: 7.5px 15px;
+    width: 100%;
+    border: 1px solid #cccccc;
+    outline: none;
+}
+.btn-box{
+    text-align: center;
+    margin-top: 0px;
+    width: 100%;
+}
+.btn-box button{
+    padding: 7.5px 15px;
+    border-radius: 2px;
+    background-color: white;
+    color: black;
+    border: none;
+    outline: none;
+    font-family: Bahnschrift Light;
+    font:  2em 1em "Times New Roman", "MS Serif", "New York", serif; 
+    font-size: 14px;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+form{
+    background-color: black;
+}
+.g{
+    font-family: 'Courier New', Courier, monospace;
+    font:  2em 1em "Times New Roman", "MS Serif", "New York", serif; 
+    margin: 0px; 
+    padding: 10px; 
+    color: #403F3F; 
+    font-size: 30pt;
+    text-align: center;
+}
+.h{
+    text-align: justify;
+    border-radius: 5px 5px 0 0;
+    color:#BFB6AE;
+    
+    font-family: Bahnschrift Light;
+}
+th{
+    font-family: 'Courier New', Courier, monospace;
+}

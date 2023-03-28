@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Liên Hệ</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="shortcut icon" href="images/z3025513295485_5f50442712fe24d380a00014d15140ce.jpg" />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='lienhe.css'>
+    <script>
+        function contact(frm){
+	        var emailReg = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+	        if(frm.name.value.length < 4){
+		        alert("Vui lòng nhập họ tên của bạn.");
+                    frm.name.focus();
+                return false;
+	        }
+	        if(emailReg.test(frm.email.value) == false){
+	    	    alert("Vui lòng nhập email hợp lệ.");
+		        frm.email.focus();
+		        return false;
+	        }
+	        if(frm.content_contact.value.length < 10){
+		        alert("Nội dung cần liên hệ quá ngắn");
+		        frm.content_contact.focus();
+		        return false;
+	        }
+	        alert("Đã gửi Nội dung cần liên hệ.");
+	        return true;
+        }
+            function checkKeySearch(e){
+                var key = e.which || e.keyCode;
+                if(key == 32){
+                    doSearch();
+                }
+            }
+            function doSearch(){
+                var frm = document.forms["frm-search"];
+                if(frm.words.value.length > 0)
+                    frm.submit();
+            }
+    </script>
+</head>
+
+
+<body>
+    <header>
+       <img class="logo" src="images/z3025513295485_5f50442712fe24d380a00014d15140ce.jpg" alt="">
+        
+        <!-- <div class="header"> -->
+            <div class="mxh">
+                <a><i class="fa fa-twitter"></i></a>
+                <a><i class="fa fa-pinterest"></i></a>
+                <a><i class="fa fa-instagram"></i></a>
+                <a><i class="fa fa-facebook"></i></a>
+            </div>
+            <div class="box">
+                <form name="frm-search" method="get" action="T.html">
+                    <div class="input-container">
+                        <label for="search"><i id="iconwhite" class="fa fa-search icon-white" onclick="doSearch()"></i>   
+                <input id="a" class="search-input" type="text" name="words" onclick placeholder="Tìm kiếm bài viết..." onkeypress="checkKeySearch(e)">
+            </div>
+            </form>
+            </div>
+        <!-- </div>     -->
+        
+        <nav>
+            <a href="index.html">Trang chủ</a> 
+            <a href="gioithieu.html">Giới thiệu</a>
+            <a href="khampha.html">Khám phá</a>
+            <a href="Tour.html">Tour</a>
+            <a href="lienhe.html">Liên hệ</a>
+            <a href="Tài khoản.html">Tài khoản</a>
+            <a href="dangkydoan.html">Đăng ký</a>
+        </nav>
+        
+    </header>
+    <h1>LIÊN HỆ VỚI CHÚNG TÔI</h1>
+    <div class="container">
+        <table class="tb1" align="center">
+            <tr>
+                <td><img class="icon-contact" src="images/goi.png"></td>
+                <td><img class="icon-contact" src="images/email.png"></td>
+                <td><img class="icon-contact" src="images/diachi.png"></td>
+            </tr>
+            <tr>
+                <td>19006666</td>
+                <td>yeudulich@gmail.com</td>
+                <td>264,</td>
+            </tr>
+            <tr>
+                <td>Hãy gọi cho chúng tôi khi bạn cần đặt tour</td>
+                <td>Email cho chúng tôi khi bạn cần giúp đỡ</td>
+                <td>Phường Xuân Khánh, quận Ninh Kiều, thành phố Cần Thơ</td>
+            </tr>
+        </table>
+    </div>
+    
+    <fieldset style="margin-top: 80px;">
+        <h1>HÃY ĐỂ LẠI Ý KIẾN ĐÓNG GÓP TẠI ĐÂY</h1>
+        <table method="post" enctype="application/x-www-form-urlencoded" align="center"> 
+            <form method="post" onsubmit="return contact(this)" action="#">
+                <tr>
+                    <td><label for="txt_hoten"></label><input type="text" id="txt_hoten" placeholder="Vui lòng nhập họ tên của bạn" name="name"></td>
+                    <td rowspan="3"><label for="txt_nd"></label><textarea id="txt_noi_nd" rows="9" cols="70" placeholder="Nội dung đóng góp" name="content_contact" name="noidung"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="txt_email"></label><input type="email" id="txt_email" placeholder="Vui lòng nhập địa chỉ Email" name="email"></td>
+                </tr>
+                <tr>
+                    <td><label for="txt_sdt"></label><input id="txt_sdt" type="text" placeholder="Số điện thoại" name="sdt"></td>
+                </tr>            
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Gửi">                                    
+                    </td>
+                </tr>
+            </form>
+        </table>
+    </fieldset>
+
+    <div style="clear: both;"></div>
+    <footer>
+        <table>
+            <tr class="hotline">
+                <th>Hỗ trợ</th>
+                <th>Giới thiệu</th>    
+                <th>Hotline</th>
+            </tr>
+            <tr>
+                <td><a href="">Trang tin tức</a></td>
+                <td><a href="">Nhà đầu tư</a></td>
+                <td><a href="">Khách lẻ: 0287.302.3368</a></td>
+            </tr>
+            <tr>
+                <td><a href="">Trung tâm trợ giúp</a></td>
+                <td><a href="">Các tùy chọn hủy</a></td>
+                <td><a href="">Vé máy bay: 0933.994.299</a></td>
+            </tr>
+            <tr>          
+                <td><a href="">Thông tin an toàn</a></td>
+                <td><a href="">Tìm hiểu các tính năng mới</a></td>
+                <td><a href="">Tour đoàn trong nước: 0909.189.920</a></td>
+            </tr>
+   
+        </table>
+        <hr/>
+        <p class="demo">&copy;2021 Demo &emsp;.&emsp; Quyền riêng tư &emsp;. &emsp;Điều khoản&emsp; . &emsp;Sơ đồ trang web</p>
+     </footer>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style_trangchu.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Trang Chủ</title>
+        <link rel="shortcut icon" href="images/z3025513295485_5f50442712fe24d380a00014d15140ce.jpg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <script>
+            function checkKeySearch(e){
+                var key = e.which || e.keyCode;
+                if(key == 32){
+                    doSearch();
+                }
+            }
+            function doSearch(){
+                var frm = document.forms["frm-search"];
+                if(frm.words.value.length > 0)
+                    frm.submit();
+            }
+        
+        </script>
+    </head>
+    <body>
+        <div>
+
+        </div>
+        <header>
+           <img class="logo" src="images/z3025513295485_5f50442712fe24d380a00014d15140ce.jpg" alt="">
+            
+            <!-- <div class="header"> -->
+                <div class="mxh">
+                    <a><i class="fa fa-twitter"></i></a>
+                    <a><i class="fa fa-pinterest"></i></a>
+                    <a><i class="fa fa-instagram"></i></a>
+                    <a><i class="fa fa-facebook"></i></a>
+                </div>
+                <!-- <div class="box">
+                    <a type="submit">
+                        <i class="fa fa-search"></i>
+                    </a>
+                    <input id="a" type="text" name="search" width="300px" placeholder="Tìm kiếm bài viết...">
+                </div> -->
+                <div class="box">
+                    <form name="frm-search" method="get" action="T.html">
+                        <div class="input-container">
+                            <label for="search"><i id="iconwhite" class="fa fa-search icon-white" onclick="doSearch()"></i>   
+                            <input id="a" class="search-input" type="text" name="words" onclick placeholder="Tìm kiếm bài viết..." onkeypress="checkKeySearch(e)">
+                        </div>
+                    </form>
+                </div>
+            <!-- </div>     -->
+            
+            <nav>
+                <a href="index.html">Trang chủ</a> 
+                <a href="gioithieu.html">Giới thiệu</a>
+                <a href="khampha.html">Khám phá</a>
+                <a href="Tour.html">Tour</a>
+                <a href="lienhe.html">Liên hệ</a>
+                <a href="Tài khoản.html">Tài khoản</a>
+                <a href="dangkydoan.html">Đăng ký</a>
+            </nav>
+            
+        </header>
+        <main>
+            <article>
+                <img class="img1" src="images/z3027265141937_271c57f88af2b655c1f92f13e378f18e.jpg" alt="">
+                <div class="text">
+                    <h1>Khám phá nhiều vùng đất mới</h1>
+                    <button><a href="Tour.html">Ở đây.</a></button>
+                </div>
+                <hr class="hr1"/><h2 align="center">Top 5 địa điểm tham quan hot nhất ở Việt Nam</h2><hr class="hr2"/>
+
+                <div class="d-container">
+                    <div>
+                        <h3>1. Chợ Nổi</h3>
+                    </div>
+
+                    <div class="card">
+                        <div class="face front"><img src="https://i.pinimg.com/564x/76/a8/4f/76a84f48f82c0f2008ebf44502b9dd6a.jpg" width="100%" alt=""></div>
+                        <div class="face back">1.Đồng bằng châu thổ là một mạng lưới đường thủy nối liền với nhau dài 60.000 km, trải dài trên ba tỉnh của Việt Nam. Khu vực này có nhiều làng nhỏ, chùa chiền, rừng ngập mặn, vườn cây ăn trái và chợ nổi. Cách tốt nhất để trải nghiệm khu vực này là tham gia các tour du lịch bằng thuyền hoặc xe đạp. Bạn phải dành một vài ngày để thực sự tìm hiểu khu vực này.</div>
+                    </div>
+                    <div>
+                        <h3>2. Hà Nội</h3>
+                    </div>
+                    <div class="card">
+                        <div class="face front"><img src="https://i.pinimg.com/564x/5d/bb/98/5dbb98b8b90c2f7907a5c9dfaea9fcbd.jpg" width="100%" alt=""></div>
+                        <div class="face back">2.Thủ đô của Việt Nam. Khám phá những con đường nhỏ hẹp của Khu Phố Cổ, ghé thăm vô số đền thờ và phòng trưng bày, bảo tàng lịch sử hoặc Lăng Chủ tịch Hồ Chí Minh. Hà Nội cũng là một cơ sở tốt để thực hiện các tour du lịch nhiều ngày đến Vịnh Hạ Long. Đó là một thành phố náo nhiệt, hỗn loạn - hãy nắm lấy nó!</div>
+                    </div>
+
+                    <div>
+                        <h3>3. Vịnh Hạ Long</h3>
+                    </div>
+                    <div class="card">
+                        <div class="face front"><img src="https://i.pinimg.com/564x/5f/10/43/5f104372bc9d63b01062c55dfaea0306.jpg" width="100%" alt=""></div>
+                        <div class="face back">3.Hơn 3.000 hòn đảo nằm trong làn nước xanh ngọc bích của Vịnh Hạ Long, một trong những điểm du lịch nổi tiếng nhất của đất nước. Đảo Cát Bà có địa điểm tuyệt vời để đi bộ đường dài và nhiều du khách nhận thấy mình đang tham gia một trong các chuyến tham quan hang động. Các tour du lịch ở đây thường khởi hành từ Hà Nội và kéo dài 3 hoặc 5 ngày.</div>
+                    </div>
+
+                    <div>
+                        <h3>4. Hội An</h3>
+                    </div>
+                    <div class="card">
+                        <div class="face front"><img src="https://i.pinimg.com/564x/37/13/70/371370a8c43c26b209926a1ed22d41de.jpg" width="100%" alt=""></div>
+                        <div class="face back">4.Hội An tập trung với những ngôi nhà và tòa nhà lịch sử và những quán cà phê cổ kính. Thật nhỏ và tuyệt vời để đi dạo, mua quần áo (họ có một thị trường thời trang và may đo rất lớn), ăn uống, các bãi biển gần đó và thư giãn bên dòng sông. Đó dễ dàng là nơi yêu thích của tôi ở Việt Nam.</div>
+                    </div>
+
+                    <div>
+                        <h3>5. Sapa</h3>
+                    </div>
+                    <div class="card">
+                        <div class="face front"><img src="https://i.pinimg.com/564x/60/25/5b/60255bc35abeaac28101073e803810c2.jpg" width="100%" alt=""></div>
+                        <div class="face back">5.Đây là khu vực đi bộ xuyên rừng hàng đầu ở miền Bắc Việt Nam và cực kỳ nổi tiếng với mọi loại khách du lịch. Sapa nổi tiếng với những bộ lạc trên đồi, thảm thực vật tươi tốt, những chuyến tàu đi bộ đường dài tuyệt đẹp và những ngọn núi ngoạn mục. Để tránh khách du lịch, hãy đến vào trái mùa hoặc đi bộ đường dài lâu hơn đến những khu vực mà đám đông không đi.</div>
+                    </div>
+                </div>
+
+                <!-- <div class="layout"> -->
+                    
+                    
+                </div>
+                
+                
+            </article>
+        </main>
+    </body>
+    
+    <footer>
+        <table >
+            <tr class="hotline">
+                <th>Hỗ trợ</th>
+                <th>Hotline</th>
+                <th>Giới thiệu</th>    
+            </tr>
+            <tr>
+                <td><a href="">Trang tin tức</a></td>
+                <td><a href="">Trung tâm trợ giúp</a></td>
+                <td><a href="">Khách lẻ: 0287.302.3368</a></td>
+            </tr>
+            <tr>
+                <td><a href="">Thông tin an toàn</a></td>                
+                <td><a href="">Tìm hiểu các tính năng mới</a></td>
+                <td><a href="">Tour đoàn trong nước: 0909.189.920</a></td>
+
+            </tr>
+            <tr>                
+                <td><a href="">Nhà đầu tư</a></td>
+                <td><a href="">Các tùy chọn hủy</a></td>
+                <td><a href="">Vé máy bay: 0933.994.299</a></td>
+
+            </tr>
+   
+        </table>
+        <hr/>
+        <p class="demo">&copy;2021 Demo &emsp;.&emsp; Quyền riêng tư &emsp;. &emsp;Điều khoản&emsp; . &emsp;Sơ đồ trang web</p>
+     </footer>
+</html>

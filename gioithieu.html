@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="stylee.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="shortcut icon" href="images/z3025513295485_5f50442712fe24d380a00014d15140ce.jpg" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Giới Thiệu</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <script>
+            function checkKeySearch(e){
+                var key = e.which || e.keyCode;
+                if(key == 32){
+                    doSearch();
+                }
+            }
+            function doSearch(){
+                var frm = document.forms["frm-search"];
+                if(frm.words.value.length > 0)
+                    frm.submit();
+            }
+        
+        </script>
+    </head>
+    <body>
+        <div>
+
+        </div>
+        <header>
+           <img class="logo" src="images/z3025513295485_5f50442712fe24d380a00014d15140ce.jpg" alt="">
+            
+            <!-- <div class="header"> -->
+                <div class="mxh">
+                    <a><i class="fa fa-twitter"></i></a>
+                    <a><i class="fa fa-pinterest"></i></a>
+                    <a><i class="fa fa-instagram"></i></a>
+                    <a><i class="fa fa-facebook"></i></a>
+                </div>
+                <div class="box">
+                    <form name="frm-search" method="get" action="T.html">
+                        <div class="input-container">
+                            <label for="search"><i id="iconwhite" class="fa fa-search icon-white" onclick="doSearch()"></i>   
+                            <input id="a" class="search-input" type="text" name="words" onclick placeholder="Tìm kiếm bài viết..." onkeypress="checkKeySearch(e)">
+                        </div>
+                    </form>
+                </div>
+            <!-- </div>     -->
+            
+            <nav>
+                <a href="index.html">Trang chủ</a> 
+                <a href="gioithieu.html">Giới thiệu</a>
+                <a href="khampha.html">Khám phá</a>
+                <a href="Tour.html">Tour</a>
+                <a href="lienhe.html">Liên hệ</a>
+                <a href="Tài khoản.html">Tài khoản</a>
+                <a href="dangkydoan.html">Đăng ký</a>
+            </nav>
+            
+        </header>
+        <main>
+            <article>
+                <br/>
+                <h1><hr class="hr1"/>Giới Thiệu<hr class="hr2"/></h1>
+                <br/>
+                <!-- <div class="about-left-count">
+                    <ul class="taisaochon-ul col2-ul">
+                        <li><img src="https://i.pinimg.com/originals/71/05/bf/7105bfc9967424b0cebdddadd6091a9d.jpg" alt=""></li>
+                        <li>
+                            <div>Khi xu hướng tìm kiếm thông tin và đặt tour trên mạng ngày càng gia tăng, thiết kế website du lịch trở thành nhu cầu cấp thiết với tất cả mọi công ty du lịch lữ hành trong thời buổi hiện nay. Không chỉ là kênh cung cấp thông tin cho mọi người, website du lịch còn cần phải độc đáo, thu hút và có khả năng hấp dẫn khách hàng tiến hành đặt tour cũng như sử dụng các dịch vụ khác mà đơn vị lữ hành cung cấp.
+                            </div>
+                        </li>
+                    </ul>
+                </div> -->
+
+                <div class="two-col">
+                    <div class="left-main">
+                        <img src="https://i.pinimg.com/originals/71/05/bf/7105bfc9967424b0cebdddadd6091a9d.jpg" width="100%" alt="">
+                    </div>
+                    <div class="right-main">
+                        <h2>&star; Cập nhật xu hướng</h2>
+                        <i>Khi xu hướng tìm kiếm thông tin và đặt tour trên mạng ngày càng gia tăng, thiết kế website du lịch trở thành nhu cầu cấp thiết với tất cả mọi công ty du lịch lữ hành trong thời buổi hiện nay. Không chỉ là kênh cung cấp thông tin cho mọi người, website du lịch còn cần phải độc đáo, thu hút và có khả năng hấp dẫn khách hàng tiến hành đặt tour cũng như sử dụng các dịch vụ khác mà đơn vị lữ hành cung cấp.</i>
+                    </div>
+                </div>
+                <div class="two-col">
+                    <div class="left-p2">
+                        <h2>&star; Lý do bạn nên chọn du lịch tại Demo</h2>
+                            <ol>
+                                <li>Demo cung cấp rất nhiều gói dịch vụ du lịch khác nhau, phù hợp với nhu cầu của mọi đối tượng khách hàng;</li>
+                                <li>Với kinh nghiệm và trải nghiệm Demo mang đến cho bạn một cảm giác mới lạ và thư giãn sau khoảng thời gian mệt mỏi;</li>
+                                <li>Luôn sử dụng những công nghệ tiên tiến nhất đảm bảo sức khỏe tinh thần mà khách hàng có thể tận hưởng được trọn vẹn không gian bên gia đình và bạn bè;</li>
+                                <li>Quy trình làm việc chặt chẽ đảm bảo thực hiện được yêu cầu từ phía khách hàng. </li>
+                                <li>Dịch vụ tư vấn, chăm sóc và hỗ trợ khách hàng nhiệt tình, tận tâm.</li>
+                            </ol>
+                    </div>
+                    <div class="right-p2">
+                        <img src="https://i.pinimg.com/564x/7d/b6/c0/7db6c0fe1f900ae4bb9c0a300f7a6884.jpg" width="100%" alt="">
+                    </div>
+                </div>
+                
+                <div class="two-col">
+                    <div class="left">
+                        <img src="https://i.pinimg.com/564x/8e/e1/00/8ee10056b5156598ea3ee1e99220d36a.jpg" width="100%" alt="">
+                    </div>
+                    <div class="right">
+                        <p><h2>&star; Dịch vụ</h2>
+                        <br/><br/>Để đảm bảo cho khách hàng một “Trải nghiệm kỳ nghỉ tuyệt vời”, chúng tôi áp dụng công nghệ vào việc đọc hiểu nhu cầu của thị trường, nghiên cứu phát triển sản phẩm và gợi ý những sản phẩm và dịch vụ tốt nhất, phù hợp với từng khách hàng.
+                        <br/><br/>Khách hàng chọn đặt dịch vụ với Demo.com có thể đặt qua rất nhiều kênh: đặt trực tiếp tại website, gọi điện thoại Hotline, đặt qua chat bot, app, đặt qua Facebook và các mạng xã hội khác. Với Demo.com mỗi kỳ nghỉ là một trải nghiệm tuyệt vời!
+                        <br/><br/><b>Vui lòng liên hệ:</b>
+                        <br/><br/>
+                        1. Dịch vụ khách hàng, đặt phòng khách sạn: Hotline 1900 1870 – Email: TC@Demo.com
+
+                        <br/>2. Nhà cung cấp liên hệ – Email: Market@Demo.com
+
+                        <br/>3. Liên hệ Marketing – Email: marketing@Demo.com
+
+                        <br/>4. Các liên hệ khác: 1900 1870
+                        </p>
+                    </div>
+                    <div class="">
+
+                    </div>
+                    
+                </div>
+                <!-- <div class="title">
+                    <h3>Phục vụ quý khách là trách nhiệm của chúng tôi !</h3>
+                </div> -->
+            </article>
+        </main>
+    </body>
+    <div style="clear: both;"></div>
+    <footer>
+        <table >
+            <tr class="hotline">
+                <th>Hỗ trợ</th>
+                <th>Giới thiệu</th>    
+                <th>Hotline</th>
+            </tr>
+            <tr>
+                <td><a href="">Trang tin tức</a></td>
+                <td><a href="">Nhà đầu tư</a></td>
+                <td><a href="">Khách lẻ: 0287.302.3368</a></td>
+            </tr>
+            <tr>
+                <td><a href="">Trung tâm trợ giúp</a></td>
+                <td><a href="">Các tùy chọn hủy</a></td>
+                <td><a href="">Vé máy bay: 0933.994.299</a></td>
+            </tr>
+            <tr>          
+                <td><a href="">Thông tin an toàn</a></td>
+                <td><a href="">Tìm hiểu các tính năng mới</a></td>
+                <td><a href="">Tour đoàn trong nước: 0909.189.920</a></td>
+            </tr>
+   
+        </table>
+        <hr/>
+        <p class="demo">&copy;2021 Demo &emsp;.&emsp; Quyền riêng tư &emsp;. &emsp;Điều khoản&emsp; . &emsp;Sơ đồ trang web</p>
+     </footer>
+</html>

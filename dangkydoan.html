@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Đăng Ký</title>     
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="khampha.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="shortcut icon" href="images/b10bd7710507cf599616.jpg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    </head>
+    <script type="text/javascript" ></script>
+    <script>
+        function register(frm){
+            var emailReg = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+                if(frm.tdangnhap.value.length < 2){
+                    alert("Vui lòng nhập tên đăng nhập của bạn!");
+                        frm.tdangnhap.focus();
+                    return false;
+                    } 
+                if(frm.mkhau1.value.length < 8){
+                    alert("Mật khẩu phải có ít nhất 8 ký tự.");
+                        frm.mkhau1.focus();
+                    return false;
+                    }
+                if(frm.mkhau1.value.length != frm.mkhau2.value.length){
+                    alert("Mật khẩu và Nhập lại mật khẩu phải giống nhau.");
+                        frm.mkhau2.focus();
+                    return false;
+                    }
+                if(emailReg.test(frm.email.value) == false){
+                    alert("Vui lòng nhập email hợp lệ!");
+                        frm.email.focus();
+                    return false;
+                    }
+                if(frm.name.value.length < 4){
+                    alert("Vui lòng nhập họ tên của bạn!");
+                        frm.name.focus();
+                    return false;
+                    } 
+              
+            alert("Đã gửi dữ liệu Đăng ký.");
+        return true;
+            }
+        
+            function checkKeySearch(e){
+                var key = e.which || e.keyCode;
+                if(key == 32){
+                    doSearch();
+                }
+            }
+            function doSearch(){
+                var frm = document.forms["frm-search"];
+                if(frm.words.value.length > 0)
+                    frm.submit();
+            }
+        
+        
+    </script>
+    <body>
+        <header>     
+           <img class="logo" src="images/z3025513295485_5f50442712fe24d380a00014d15140ce.jpg" alt="">          
+            <!-- <div class="header"> -->
+                <div class="mxh">
+                    <a><i class="fa fa-twitter"></i></a>
+                    <a><i class="fa fa-pinterest"></i></a>
+                    <a><i class="fa fa-instagram"></i></a>
+                    <a><i class="fa fa-facebook"></i></a>
+                </div>
+                <div class="box">
+                    <form name="frm-search" method="get" action="T.html">
+                        <div class="input-container">
+                            <label for="search"><i id="iconwhite" class="fa fa-search icon-white" onclick="doSearch()"></i>   
+                            <input id="a" class="search-input" type="text" name="words" onclick placeholder="Tìm kiếm bài viết..." onkeypress="checkKeySearch(e)">
+                        </div>
+                    </form>
+                </div>
+            <!-- </div>     -->            
+            <nav>
+                <a href="index.html">Trang chủ</a> 
+                <a href="gioithieu.html">Giới thiệu</a>
+                <a href="khampha.html">Khám phá</a>
+                <a href="Tour.html">Tour</a>
+                <a href="lienhe.html">Liên hệ</a>
+                <a href="Tài khoản.html">Tài Khoản</a>
+                <a href="dangkydoan.html">Đăng Ký</a>
+            </nav>           
+        </header>
+            <main>          
+                <div class="container">
+                    <div class="login-form">
+                        <table method="post" enctype="application/x-www-form-urlencoded" align="center">
+                            <form id="frm-login" method="post" onsubmit="return register(this)" action="#">
+                                <h2 style="text-align: center; font-family: Bahnschrift Light;"> Đăng Ký</h2>
+                                    <tr class="input-box">                    
+                                        <label for="txt_tendnhap"></label>
+                                        <td>
+                                            <label for="txt_tendnhap"></label>                               
+                                            <input minlength="2" required type="text" id="txt_tendnhap" placeholder="Tên đăng nhập" name="tdangnhap">    
+                                        </td>                            
+                                    </tr>                     
+                                    <tr class="input-box">
+                                        <label for="psw1"></label>
+                                        <td>                              
+                                            <input required type="password" id="psw1" minlength="8" placeholder="Mật khẩu" name="mkhau1">                             
+                                        </td>
+                                    </tr>   
+                                    <tr class="input-box">
+                                        <label for="psw2"></label>
+                                        <td>                              
+                                            <input required type="password" id="psw2" minlength="8" placeholder="Nhập lại mật khẩu" psw2="mkhau2">                            
+                                        </td>
+                                    </tr>   
+                                    <tr class="input-box">
+                                        <label for="txt_email"></label>  
+                                        <td>                              
+                                            <input id="txt_email" required type="email" pattern="^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}" placeholder="Email" name="email">                                
+                                        </td>   
+                                    </tr>
+                                    <tr class="input-box">                    
+                                        <label for="txt_hoten"></label>
+                                        <td>                               
+                                            <input minlength="4" required type="text" id="txt_hoten" placeholder="Họ tên" name="name">    
+                                        </td>                            
+                                    </tr>
+                                    <tr class="input-box">
+                                        <label for="sdt"></label>
+                                        <td>                              
+                                            <input required type="number" id="sdt" minlength="10" placeholder="Số điện thoại" name="sdt1">                            
+                                        </td>                          
+                                    </tr>  
+                                    <tr>
+                                        <td>
+                                            <select class="select"> 
+                                                <optgroup>
+                                                    <option value= "">--Ngày--</option>
+                                                    <option value= "1"> 1 </option>
+                                                    <option value= "2"> 2 </option>
+                                                    <option value= "3"> 3 </option>
+                                                    <option value= "4"> 4 </option>
+                                                    <option value= "5"> 5 </option>
+                                                    <option value= "6"> 6 </option>
+                                                    <option value= "7"> 7 </option>
+                                                    <option value= "8"> 8 </option>
+                                                    <option value= "9"> 9 </option>
+                                                    <option value= "10"> 10 </option>
+                                                    <option value= "11"> 11 </option>
+                                                    <option value= "12"> 12 </option>
+                                                    <option value= "13"> 13 </option>
+                                                    <option value= "14"> 14 </option>
+                                                    <option value= "15"> 15 </option>
+                                                    <option value= "16"> 16 </option>
+                                                    <option value= "17"> 17 </option>
+                                                    <option value= "18"> 18 </option>
+                                                    <option value= "19"> 19 </option>
+                                                    <option value= "20"> 20 </option>
+                                                    <option value= "21"> 21 </option>
+                                                    <option value= "22"> 22 </option>
+                                                    <option value= "23"> 23 </option>
+                                                    <option value= "24"> 24 </option>
+                                                    <option value= "25"> 15 </option>
+                                                    <option value= "26"> 16 </option>
+                                                    <option value= "27"> 27 </option>
+                                                    <option value= "28"> 28 </option>
+                                                    <option value= "29"> 29 </option>
+                                                    <option value= "30"> 30 </option>
+                                                    <option value= "31"> 31 </option>
+                                                </optgroup>
+                                            </select>
+                                            <select class="select">
+                                                <optgroup>
+                                                    <option value= "">--Tháng--</option>
+                                                    <option value= "1"> 1 </option>
+                                                    <option value= "2"> 2 </option>
+                                                    <option value= "3"> 3 </option>
+                                                    <option value= "4"> 4 </option>
+                                                    <option value= "5"> 5 </option>
+                                                    <option value= "6"> 6 </option>
+                                                    <option value= "7"> 7 </option>
+                                                    <option value= "8"> 8 </option>
+                                                    <option value= "9"> 9 </option>
+                                                    <option value= "10"> 10 </option>
+                                                    <option value= "11"> 11 </option>
+                                                    <option value= "12"> 12 </option>
+                                                </optgroup>
+                                            </select>
+                                            <label for="namsinh"></label>
+                                                <input class="select" id="namsinh" maxlength="4" placeholder="Năm sinh" required type="number" name="nsinh">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label for= "male"> Male</label>
+                                                <input required type="radio" name="gender" checked value="male">
+                                            <label for= "female"> female </label> 
+                                                <input required type= "radio" name= "gender" checked value= "female"> 
+                                        </td>
+                                    </tr>    
+                                    <tr>
+                                        <td colspan="2" class="btn-box">
+                                            <button type="submit" value="Đăng ký"><b>Đăng Ký</b></button> <button type="reset"><b>Hủy</b></button>                         
+                                        </td>                                                 
+                                    </tr>                                    
+                            </form>
+                        </table>
+                    </div>
+                </div>
+            </main>
+        </body>
+        <footer>
+            <table>
+                <tr class="hotline">
+                    <th>Hỗ trợ</th>
+                    <th>Giới thiệu</th>    
+                    <th>Hotline</th>
+                </tr>
+                <tr>
+                    <td><a href="">Trang tin tức</a></td>
+                    <td><a href="">Nhà đầu tư</a></td>
+                    <td><a href="">Khách lẻ: 0287.302.3368</a></td>
+                </tr>
+                <tr>
+                    <td><a href="">Trung tâm trợ giúp</a></td>
+                    <td><a href="">Các tùy chọn hủy</a></td>
+                    <td><a href="">Vé máy bay: 0933.994.299</a></td>
+                </tr>
+                <tr>          
+                    <td><a href="">Thông tin an toàn</a></td>
+                    <td><a href="">Tìm hiểu các tính năng mới</a></td>
+                    <td><a href="">Tour đoàn trong nước: 0909.189.920</a></td>
+                </tr>   
+            </table>
+            <hr/>
+            <p class="demo">&copy;2021 Demo &emsp;.&emsp; Quyền riêng tư &emsp;. &emsp;Điều khoản&emsp; . &emsp;Sơ đồ trang web</p>
+         </footer>
+    </body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>    
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="shortcut icon" href="images/favicon.ico" /> 
+<link rel="stylesheet" href="daw.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" media="screen" href="css/bootstrap.min.css">
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</head>
+
+<link rel="shortcut icon" href="z3031103166557_c1ba670a9c6dc4cb3e8c730ecca7d110.jpg" /> 
+<script type="text/javascript" defer src="onthi.js" ></script>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tours</title>
+        <script>
+        function checkKeySearch(e){
+    var key = e.which || e.keyCode;
+    if(key == 32){
+        doSearch();
+    }
+}
+function doSearch(){
+    var frm = document.forms["frm-search"];
+    if(frm.words.value.length > 0)
+        frm.submit();
+}
+    
+        </script>
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="images/z3025513295485_5f50442712fe24d380a00014d15140ce.jpg" alt="">
+             
+             <!-- <div class="header"> -->
+                 <div class="mxh">
+                     <a><i class="fa fa-twitter"></i></a>
+                     <a><i class="fa fa-pinterest"></i></a>
+                     <a><i class="fa fa-instagram"></i></a>
+                     <a><i class="fa fa-facebook"></i></a>
+                 </div>
+               <!-- <div class="box">
+                     <a type="submit">
+                         <i class="fa fa-search" style="color: white;"></i>
+                     </a>
+                     <input id="a" type="text" name="search" width="300px" placeholder="Tìm kiếm bài viết...">
+                 </div>
+             </div>     -->
+             <div class="box">
+               <form name="frm-search" method="get" action="T.html">
+                   <div class="input-container">
+                       <label for="search"><i id="iconwhite" class="fa fa-search icon-white" onclick="doSearch()"></i>   
+               <input id="a" class="search-input" type="text" name="words" onclick placeholder="Tìm kiếm bài viết..." onkeypress="checkKeySearch(e)">
+           </div>
+           </form>
+           </div>
+             
+             <nav>
+                 <a href="trangchu.html" >Trang chủ</a> 
+                 <a href="gioithieu.html" >Giới thiệu</a>
+                 <a href="khampha.html" >Khám phá</a>
+                 <a href="Tour.html" >Tour</a>
+                 <a href="lienhe.html" >Liên hệ</a>
+                 <a href="Tài khoản.html" >Tài khoản</a>
+                 <a href="dangkydoan.html">Đăng ký</a>
+             </nav>
+             
+         
+        </header><br><br>
+        <main >
+            
+        </main>
+    
+        <div style="clear: both;"></div>
+        <footer>
+            <table>
+                <tr class="hotline" style="font-family: 'Courier New', Courier, monospace;">
+                    <th >Hỗ trợ</th>
+                    <th >Giới thiệu</th>    
+                    <th >Hotline</th>
+                </tr>
+                <tr>
+                    <td ><a href="">Trang tin tức</a></td>
+                    <td ><a href="">Nhà đầu tư</a></td>
+                    <td ><a href="">Khách lẻ: 0287.302.3368</a></td>
+                </tr>
+                <tr>
+                    <td ><a href="">Trung tâm trợ giúp</a></td>
+                    <td ><a href="">Các tùy chọn hủy</a></td>
+                    <td><a href="">Vé máy bay: 0933.994.299</a></td>
+                </tr>
+                <tr>          
+                    <td ><a href="">Thông tin an toàn</a></td>
+                    <td ><a href="">Tìm hiểu các tính năng mới</a></td>
+                    <td ><a href="">Tour đoàn trong nước: 0909.189.920</a></td>
+                </tr>
+       
+            </table>
+            <hr/>
+            <p class="demo">&copy;2021 Demo &emsp;.&emsp; Quyền riêng tư &emsp;. &emsp;Điều khoản&emsp; . &emsp;Sơ đồ trang web</p>
+         </footer>
+    
+        </body>
+    </html>

@@ -1,0 +1,208 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0 40px;
+    background-color: rgb(250, 243, 239);
+    width: 1024px;
+	margin: 5px auto 0;
+    
+}
+/*trang chu*/
+header{
+    background-color: rgb(0, 0, 0);
+    width: 1024px;
+    height: 100px;
+    /* border: 1px solid rgb(155, 153, 153); */
+    border-radius: 5px 5px 0 0;
+
+}
+nav {
+    position: absolute;
+    padding: 20px;
+    top: 60px;
+    
+}
+nav a{
+    font-family: Tahoma "Geneva";
+    text-transform: uppercase;
+    bottom: 20px;
+    font-size: 18px;
+    padding: 10px 15px;
+    margin: 15px 0;
+    /* color: rgb(15, 15, 15); */
+    color: white;
+    font-weight: bold;
+}
+nav a:hover{
+    color: rgb(0, 0, 0);
+    /* border-radius: 5px;
+    border: 1px solid; */
+    background-color: rgb(250, 243, 239);
+}
+.hr1{
+    width: 40%; 
+    size: 20px; 
+    text-align: center;
+    color: black;
+    background-color: black;
+    float: left;
+}
+.hr2{
+    width: 40%; 
+    size: 20px; 
+    text-align: center;
+    color: black;
+    background-color: black;
+    float: right;
+}
+.img1{
+    width: 1024px;
+    height: 410px;
+    border-radius: 0;
+    margin-top: 6px;
+    border-radius: 0 0 5px 5px;
+}
+.text{
+    color: #fff;
+    position: absolute;
+    /* top: 310px; */
+    top: 110px;
+    background-color: rgba(238, 236, 236, 0.356);
+    width: 1024px;
+    height: 200px;
+    text-align: center;
+    padding-top: 220px;
+    font-size: 20px;
+    
+}
+#a{
+    width: 250px;
+    height: 20px;
+    border-radius: 5px;
+}
+div button{
+    font-size: 20px;
+    border: 1px solid ;
+    border-radius: 5px ;
+    margin: 3px;
+    background-color: rgba(0, 0, 0, 0.534);
+    color: white;
+}
+div button a{
+    color: white;
+    text-decoration: none;
+}
+.box{
+    position: relative;
+    float: right;
+    margin: 10px 20px;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 5px;
+    width: 300px;
+    color: white;
+    bottom: 0px;
+    left: 120px;
+}
+.logo{
+    position: absolute;
+    padding: 10px;
+    width: 90px;
+}
+
+.mxh a{
+    position: relative;
+    color: white;
+    padding: 10px;
+    float: right;
+    right: 370px;
+    top: 10px;
+    font-size: 20px;
+}
+.h3{ 
+    bottom: 180px;
+    font-size: 20px;
+}
+footer{
+    width: 100%;
+    height: 550px;
+    margin: 5px 0;
+    background-color: black;
+    border-radius: 0 0 5px 5px;
+    font-size: 18px;
+}
+.demo{
+    color: white;
+    text-align: center;
+    /* margin: 5px 0; */
+    /* padding: 5px; */
+}
+table a{
+    text-decoration: none;
+    color: white;
+}
+table a:hover{
+    text-decoration-style: dashed;
+    background: rgb(255, 255, 255);
+    color: black;
+    border-radius: 3px;
+    padding: 5px;
+}
+table{
+    width:100%;
+    color:#ffffff; 
+    text-align: justify;
+    margin: 5%;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+}
+table tr .hotline{
+    color: white;
+    border-style: dashed;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.d-container {
+    top: 500px;
+    width: 100%;
+}
+.card {
+    width: 18%;
+    padding: 1%;
+    height: 300px;
+    float: left;
+    color: white;
+    font-size: 18px;
+    text-align: justify;
+    bottom: 10px;
+    position: relative; /* declare parent for inner child absolute */
+    transform-style: preserve-3d; /* to tranform with 3d effect */
+    animation: flip 3s linear infinite;
+    transition: transform 1s;
+}
+.face {
+    position: absolute; /* for stick 2 card side together */
+    backface-visibility: hidden; /* hide back face when front face is face us */
+    width: 190px;
+    height: 250px;
+    font-weight: bold;
+    font-size: 13px;
+}
+.front {
+    background-image: url(images/z3025513295485_5f50442712fe24d380a00014d15140ce.jpg);
+}
+.back {
+    background-color: #ffffff;
+    color: black;
+    transform: rotateY(180deg); /* to flip back */
+    width: 190px;
+    height: 250px; 
+    padding: 15px 0;
+}
+.card:hover {
+    transform: rotateY(180deg);  
+}
+  
